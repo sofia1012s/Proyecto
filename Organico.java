@@ -17,7 +17,7 @@ public class Organico {
     private int cerdos;
     private int pescado;
     private int edad;
-    private Persona persona;//el nombre de esta clase puede cambiar dependiendo como le pongan  
+    private Persona Persona;//el nombre de esta clase puede cambiar dependiendo como le pongan  //agrege el nombre de la clase 
 
 //*****************************************************************************
 //Constructores
