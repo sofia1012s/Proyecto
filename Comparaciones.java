@@ -139,6 +139,15 @@ public class Comparaciones {
     }
 
     public int comparacionPersonaP(int cantidadPromedio) {
+        int aguaP = personaP.getAguaPromedio();
+        int botellasP = personaP.getBotellasPromedio();
+        int papelP = personaP.getPapelPromedio();
+        int bolsasP = personaP.getBolsasPromedio();
+        int frutasVerdurasP = personaP.getFrutasVerdurasPromedio();
+        int polloP = personaP.getPolloPromedio();
+        int carneP = personaP.getCarnePromedio();
+        int cerdoP = personaP.getCerdoPromedio();
+        int pescadoP = personaP.getPescadossPromedio();
 
         return cantidadPromedio;
     }
