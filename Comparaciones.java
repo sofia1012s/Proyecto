@@ -6,12 +6,24 @@ public class Comparaciones {
 
     public int comparacionBotellas(int botellas) {
         // botellas = cantidad de botellas en cierta cantidad de tiempo
-        //
-        return botellas;
+        // dimensiones botella promedio:
+        // https://www.remsaplasticos.com/productos/botellas-pet/botella-pet-600ml
+
+        // dimensiones cancha de futból:
+        // https://www.cihefe.es/cuadernosdefutbol/2019/01/el-terreno-de-juego-dimensiones/
+
+        // Cantidad de botellas que llenan una cancha: 151,404
+
+        // Si toda la población de Guatemala (16,600,000) gastara la misma cantidad de
+        // botellas por semana:
+        int botellasPoblacion = (16600000 * botellas);
+
+        int canchasSemana = (botellasPoblacion) / (151404); // Cantidad de canchas que se llenarían por semana
+        return canchasSemana;
     }
 
     public int comparacionPapel(int papel) {
-
+        
         return papel;
     }
 
