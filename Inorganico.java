@@ -19,50 +19,69 @@ public class Inorganico {
     private int papel;
     private int tiempo;
     private int bolsas;
-    private int edad;
-   // private Persona persona;
+    private int cuatroSemanas = 4;
+
 
 //*****************************************************************************
 //Constructores
 //*****************************************************************************
-
+public Inorganico(int botellas, int papel, int tiempo, int bolsas){
+    this.botellas = botellas;
+    this.papel = papel;
+    this.tiempo = tiempo;
+    this.bolsas = bolsas;
+    
+}
 //*****************************************************************************
 //Metodos
 //*****************************************************************************
-    public int conversionBotellas(int botellas, int tiempo){
-        /**
-         * Realiza una multiplicación de la cantidad de botellas por semana 
-         * por una cantidad de tiempo específico.
-         */
+public int getBotellas(){
+    return botellas;
+} 
+public int getPapel(){
+    return papel;
+}
+public int getTiempo(){
+    return tiempo;
+}
+public int getBolsas(){
+    return bolsas;
+}  
 
-        int conversion = botellas*tiempo;
-        return conversion;
+public int conversionBotellas(){
+    /**
+     * Realiza una multiplicación de la cantidad de botellas por semana 
+     * por 4 para convertir la frecuencia a menusal.
+     */
 
-    }
-    public int conversionPapel(int papel, int tiempo){
-        /**
-         * Realiza una multiplicación de la cantidad de papel por semana 
-         * por una cantidad de tiempo específico.
-         */
-        int conversion = papel*tiempo;
-        return conversion;
+    int conversion = botellas*cuatroSemanas;
+    return conversion;
 
-    }
-    public int conversionAgua(int tiempoBaniandose, int tiempo){
-        /**
-         * Realiza una multiplicación de la cantidad de agua consumida 
-         * por una cantidad de tiempo específico.
-         */
-        int conversion = tiempoBaniandose*tiempo;
-        return conversion;
+}
+public int conversionPapel(){
+    /**
+     * Realiza una multiplicación de la cantidad de papel por semana 
+     * por 4 para convertir la frecuencia a menusal.
+     */
+    int conversion = papel*cuatroSemanas;
+    return conversion;
 
-    }
-    public int conversionBolsas(int bolsas, int tiempo){
-        /**
-         * Realiza una multiplicación de la cantidad de bolsas por semana 
-         * por una cantidad de tiempo específico.
-         */
-        int conversion = bolsas*tiempo;
-        return conversion;
-    }
+}
+public int conversionAgua(){
+    /**
+     * Realiza una multiplicación de la cantidad de agua consumida 
+     * por 4 para convertir la frecuencia a menusal.
+     */
+    int conversion = tiempo*cuatroSemanas;
+    return conversion;
+
+}
+public int conversionBolsas(){
+    /**
+     * Realiza una multiplicación de la cantidad de bolsas por semana 
+     * por 4 para convertir la frecuencia a menusal.
+     */
+    int conversion = bolsas*cuatroSemanas;
+    return conversion;
+}
 }

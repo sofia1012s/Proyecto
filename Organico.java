@@ -16,60 +16,81 @@ public class Organico {
     private int carne;
     private int cerdos;
     private int pescado;
-    private int edad;
-   // private Persona Persona;//el nombre de esta clase puede cambiar dependiendo como le pongan  //agrege el nombre de la clase 
+    private int cuatroSemanas = 4;
 
 //*****************************************************************************
 //Constructores
 //*****************************************************************************
-
+    public Organico(int frutitas, int pollito, int carnita, int cerdito, int pescadito, int edadsita ){
+        this.frutasVerduras = frutitas;
+        this.pollo = pollito;
+        this.carne = carnita;
+        this.cerdos = cerdito;
+        this.pescado = pescadito;
+    }
 //*****************************************************************************
 //Metodos
 //*****************************************************************************
-    public int conversionFrutasVerduras(int frutasVerduras, int tiempo){
+    public int getFrutasVerduras(){
+        return frutasVerduras;
+    }
+    public int getPollo(){
+        return pollo;
+    }
+    public int getCarne(){
+        return carne;
+    }
+    public int getCerdo(){
+        return cerdos;
+    }
+    public int getPescado(){
+        return pescado;
+    }
+
+    public int conversionFrutasVerduras(){
         /**
-         * toma el valor de la cantidad de frutas o verduras que consume la 
-         * persona a la semana y lo multiplica por su edad o por alguna 
-         * cantidad de tiempo en específico
+         * toma el valor de la cantidad de frutas o verduras(Lb) que consume la 
+         * persona a la semana y lo multiplica por su edad o por 4 para 
+         * convertir la frecuencia a menusal
          */
 
-        int conversion = frutasVerduras * tiempo;
+        int conversion = frutasVerduras * cuatroSemanas;
         return conversion;
     }
-    public int conversionPollo(int pollo, int tiempo){
+    public int conversionPollo(){
         /**
          *  toma el valor de la cantidad de libras de pollo que consume la 
          * persona a la semana y lo multiplica por su edad o por alguna 
          * cantidad de tiempo en específico
          */
-        int conversion = pollo * tiempo;
+        int conversion = pollo * cuatroSemanas;
         return conversion;
     }
-    public int conversionCarne(int carne, int tiempo){
+    public int conversionCarne(){
         /**
          *  toma el valor de la cantidad de libras de carne que consume 
          * la persona a la semana y lo multiplica por su edad o por 
          * alguna cantidad de tiempo en específico
          */
-        int conversion = carne * tiempo;
+        int conversion = carne * cuatroSemanas;
         return conversion;
     }
-    public int conversionCerdos(int cerdos, int tiempo){
+    public int conversionCerdos(){
         /**
          * toma el valor de la cantidad de libras de cerdo que 
          * consume la persona a la semana y lo multiplica por su 
          * edad o por alguna cantidad de tiempo en específico
          */
-        int conversion = cerdos * tiempo;
+        int conversion = cerdos * cuatroSemanas;
         return conversion;
     }
-    public int conversionPescados(int pescado, int tiempo){
+    public int conversionPescados(){
         /**
          * toma el valor de la cantidad de libras de pescado que 
          * consume la persona a la semana y lo multiplica por su 
          * edad o por alguna cantidad de tiempo en específico
          */
-        int conversion = pescado * tiempo;
+        int conversion = pescado * cuatroSemanas;
         return conversion;
     }
 
