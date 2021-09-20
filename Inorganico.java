@@ -69,10 +69,11 @@ public int conversionPapel(){
 }
 public int conversionAgua(){
     /**
-     * Realiza una multiplicación de la cantidad de agua consumida 
+     * Realiza una multiplicación de la cantidad de tiempo
      * por 4 para convertir la frecuencia a menusal.
      */
-    int conversion = tiempo*cuatroSemanas;
+    int tiempoSemanal = (tiempo*7);
+    int conversion = tiempoSemanal * 4;
     return conversion;
 
 }
