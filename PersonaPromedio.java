@@ -1,13 +1,13 @@
 class PersonaPromedio {
-    private int botellasPromedio = 16;
-    private int papelPromedio = 48; //Kg 
-    private int aguaPromedio = 100; //Litros de agua al día 
-    private int bolsasPromedio = 238; //Bolsas al año
-    private int frutasVerdurasPromedio = 271; //gramos al día
-    private int polloPromedio = 52; //Libras al año 
-    private int carnePromedio = 51; //Kilos al año 
-    private int cerdoPromedio = 17; //Kilos al año
-    private int pescadosPromedio = 20; //Kilos al añox
+    private int botellasPromedio = 16; //Botellas consumidas por mes 
+    private int papelPromedio = 105; //Libras al mes
+    private int aguaPromedio = 3000; //Litros de agua al mes
+    private int bolsasPromedio = 20; //Bolsas al mes
+    private int frutasVerdurasPromedio = 17; //Libras al mes
+    private int polloPromedio = 4; //Libras al mes
+    private int carnePromedio = 9; //Libras al mes 
+    private int cerdoPromedio = 4; //Libras al mes
+    private int pescadosPromedio = 4; //Libras al mes 
 
     public int getBotellasPromedio() {
         return botellasPromedio;
