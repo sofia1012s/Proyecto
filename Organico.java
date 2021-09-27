@@ -21,12 +21,12 @@ public class Organico {
 //*****************************************************************************
 //Constructores
 //*****************************************************************************
-    public Organico(int frutitas, int pollito, int carnita, int cerdito, int pescadito, int edadsita ){
-        this.frutasVerduras = frutitas;
-        this.pollo = pollito;
-        this.carne = carnita;
-        this.cerdos = cerdito;
-        this.pescado = pescadito;
+    public Organico(){
+        this.frutasVerduras = frutasVerduras;
+        this.pollo = pollo;
+        this.carne = carne;
+        this.cerdos = cerdos;
+        this.pescado = pescado;
     }
 //*****************************************************************************
 //Metodos
@@ -46,6 +46,21 @@ public class Organico {
     public int getPescado(){
         return pescado;
     }
+    public void setFV(int frutasVerduras){
+		this.frutasVerduras = frutasVerduras;
+	}
+	public void setPollo(int pollo){
+		this.pollo = pollo;
+	}
+	public void setCarne(int carne){
+		this.carne = carne;
+	}
+	public void setCerdo(int cerdo){
+		this.cerdos = cerdos;
+	}
+	public void setPescado(int pescado){
+		this.pescado = pescado;
+	}
 
     public int conversionFrutasVerduras(){
         /**
