@@ -25,7 +25,7 @@ public class Inorganico {
 //*****************************************************************************
 //Constructores
 //*****************************************************************************
-public Inorganico(int botellas, int papel, int tiempo, int bolsas){
+public Inorganico(){
     this.botellas = botellas;
     this.papel = papel;
     this.tiempo = tiempo;
@@ -47,7 +47,18 @@ public int getTiempo(){
 public int getBolsas(){
     return bolsas;
 }  
-
+public void setBotellas(int botellas){
+	this.botellas = botellas;
+}
+public void setPapel(int papel){
+	this.papel = papel;
+}
+public void setTiempo(int tiempo){
+	this.tiempo = tiempo;
+}
+public void setBolsas(int bolsas){
+	this.bolsas = bolsas;
+}
 public int conversionBotellas(){
     /**
      * Realiza una multiplicación de la cantidad de botellas por semana 
