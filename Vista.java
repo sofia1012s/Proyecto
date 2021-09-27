@@ -10,9 +10,8 @@ class Vista{
 *Crea un menu el cual le muestra las opciones y le pide un input al usuario.
 *@return opcion que eligio el usuario.
 **/
-	public int Menu(){
-		int opcion = 0;
-		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar datos del usuario\n" + "2. Ingresar consumos orgánicos\n" + "3. Ingresar consumos inorganicos\n" + "4. Ver resultados\n" + "5. Recomendaciones\n" + "6. Salir\n";
+	public int Menu(int opcion){
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ingresar consumos inorganicos\n" + "3. Ver resultados\n" + "4. Recomendaciones\n" + "5. Salir\n";
 		System.out.println(Mensaje);
 		opcion = scan.nextInt();
 		return opcion;
@@ -21,13 +20,13 @@ class Vista{
 *Mensaje de bienvenida al usuario.
 **/
 	public void Saludo(){
-		System.out.println("\nBienvenido al programa de concientización sobre el medio ambiente\n" + "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. De todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n" + "El programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, con datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n" + "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación de cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
+		System.out.println("\nBienvenido al programa de concientización sobre el medio ambiente\n" + "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. De todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n" + "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, con datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n" + "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación de cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
 	}
 /**
 *Muestra las recomendaciones sobre el consumo de recursos.
 **/
 	public void Recomendaciones(){
-		System.out.println("");
+		System.out.println("\n-Reduce tus duchas a menos de 5 minutos si es posible\n" + "\n-Cierra el grifo cuando no lo necesites (al cepillarte los dientes, al enjabonarte, al lavar los platos, etc)\n" + "\n-Reduce los paseos en automóvil y de ser posible compártelo con alguien más\n" + "\n-Considera implementar otras fuentes de proteínas a tu alimentación para disminuir los consumos de carnes\n" + "\n-Investiga como puedes realizar tu propio abono para el jardín, así aprovechas al máximo tus deshechos orgánicos\n" + "\n-Cambia tus bombillas por focos ahorrativos o LEDs\n" + "\n-Busca centros de reciclaje cerca de tu hogar para dejar de tirar las botellas y papel que utilizas\n");
 	}
 /**
 *Le pide el nombre al usuario y guarda la información.
@@ -35,7 +34,7 @@ class Vista{
 **/
 	public String Nombre(){
 		String Nombre;
-		System.out.println("Por favor, ingrese sus datos\n" + "Ingrese su nombre: ");
+		System.out.println("\nPor favor, ingrese sus datos\n" + "Ingrese su nombre: \n");
 		Nombre = scan.nextLine();
 		return Nombre;
 	}
@@ -45,7 +44,7 @@ class Vista{
 **/
 	public int Edad(){
 		int Edad;
-		System.out.println("Ingrese su edad: ");
+		System.out.println("\nIngrese su edad: \n");
 		Edad = scan.nextInt();
 		return Edad;
 	}
@@ -55,7 +54,7 @@ class Vista{
 **/
 	public int FV(){
 		int FV;
-		System.out.println("Cuántas frutas y verduras has desechado esta última semana? Ingresa la cantidad: ");
+		System.out.println("\nCuántas frutas y verduras has desechado esta última semana? Ingresa la cantidad: \n");
 		FV = scan.nextInt();
 		return FV;
 	}
@@ -65,7 +64,7 @@ class Vista{
 **/
 	public int Pollo(){
 		int Pollo;
-		System.out.println("¿Cuánto carne de pollo has consumido esta última semana? Ingresa un aproximado en libras: ");
+		System.out.println("\nCuánto carne de pollo has consumido esta última semana? Ingresa un aproximado en libras: \n");
 		Pollo = scan.nextInt();
 		return Pollo;
 	}
@@ -75,7 +74,7 @@ class Vista{
 **/
 	public int Carne(){
 		int Carne;
-		System.out.println("Cuánta carne has consumido esta última semana? Ingresa un aproximado en libras: ");
+		System.out.println("\nCuánta carne has consumido esta última semana? Ingresa un aproximado en libras: \n");
 		Carne = scan.nextInt();
 		return Carne;
 	}
@@ -85,7 +84,7 @@ class Vista{
 **/
 	public int Cerdo(){
 		int Cerdo;
-		System.out.println("Cuánta carne de cerdo has consumido esta última semana? Ingresa un aproximado en libras:");
+		System.out.println("\nCuánta carne de cerdo has consumido esta última semana? Ingresa un aproximado en libras: \n");
 		Cerdo = scan.nextInt();
 		return Cerdo;
 	}
@@ -95,7 +94,7 @@ class Vista{
 **/
 	public int Pescado(){
 		int Pescado;
-		System.out.println("Cuánta carne de pescado has consumido esta última semana? Ingresa un aproximado en libras:");
+		System.out.println("\nCuánta carne de pescado has consumido esta última semana? Ingresa un aproximado en libras: \n");
 		Pescado = scan.nextInt();
 		return Pescado;
 	}
@@ -107,25 +106,18 @@ class Vista{
 	public int Abono(){
 		int Abono = 0;
 		while (true){
-			try{
-				System.out.println("Con sus desechos orgánicos realiza algún tipo de abono? Si = 1, No = 2");
-				Abono = scan.nextInt();
-				if (Abono == 1){
-					System.out.println("");
-					break;
-				}
-				else if (Abono == 2){
-					System.out.println("");
-					break;
-				}
-				else {
-					System.out.println("Por favor ingrese 1 = Si o 2 = No");
-				}
-				Abono = scan.nextInt();
-			}
-			catch(InputMismatchException e){
-				System.out.println("Error: Usted no ha ingresado un numero.");
+			System.out.println("\nCon sus desechos orgánicos realiza algún tipo de abono? Si = 1, No = 2\n");
+			Abono = scan.nextInt();
+			if (Abono == 1){
+				System.out.println("");
 				break;
+			}
+			else if (Abono == 2){
+				System.out.println("");
+				break;
+			}
+			else {
+				System.out.println("\nPor favor ingrese 1 = Si o 2 = No\n");
 			}
 		}
 		return Abono;
@@ -136,7 +128,7 @@ class Vista{
 **/
 	public int Botellas(){
 		int Botellas;
-		System.out.println("Cuantas botellas has desechado esta ultima semana? Ingresa la cantidad: ");
+		System.out.println("\nCuantas botellas has desechado esta ultima semana? Ingresa la cantidad: \n");
 		Botellas = scan.nextInt();
 		return Botellas;
 	}
@@ -146,7 +138,7 @@ class Vista{
 **/
 	public int Papel(){
 		int Papel;
-		System.out.println("Cuantas hojas de papel has usado esta ultima semana? Ingresa la cantidad: ");
+		System.out.println("\nCuantas hojas de papel has usado esta ultima semana? Ingresa la cantidad: \n");
 		Papel = scan.nextInt();
 		return Papel;
 	}
@@ -156,7 +148,7 @@ class Vista{
 **/
 	public int Tiempo(){
 		int Tiempo;
-		System.out.println("Cuanto tiempo tardas en bañarte? Ingresa la cantidad en minutos: ");
+		System.out.println("\nCuanto tiempo tardas en bañarte? Ingresa la cantidad en minutos: \n");
 		Tiempo = scan.nextInt();
 		return Tiempo;
 	}
@@ -166,7 +158,7 @@ class Vista{
 **/
 	public int Bolsas(){
 		int Bolsas;
-		System.out.println("Cuantas bolsas plasticas deshechas a la semana? Ingresa la cantidad: ");
+		System.out.println("\nCuantas bolsas plasticas deshechas a la semana? Ingresa la cantidad: \n");
 		Bolsas = scan.nextInt();
 		return Bolsas;
 	}
@@ -176,7 +168,7 @@ class Vista{
 **/
 	public float Viaje(){
 		float Viaje;
-		System.out.println("Qué tan lejos viajas en automóvil o motocicleta cada semana? Ingresa la cantidad en km:");
+		System.out.println("\nQué tan lejos viajas en automóvil o motocicleta cada semana? Ingresa la cantidad en km: \n");
 		Viaje = scan.nextFloat();
 		return Viaje;
 	}
@@ -186,7 +178,7 @@ class Vista{
 **/
 	public int Lavar(){
 		int Lavar;
-		System.out.println("Cuantas veces a la semana lavas tu ropa? Ingresa la cantidad: ");
+		System.out.println("\nCuantas veces a la semana lavas tu ropa? Ingresa la cantidad: \n");
 		Lavar = scan.nextInt();
 		return Lavar;
 	}
@@ -197,25 +189,18 @@ class Vista{
 	public int Desechos(){
 		int Desechos = 0;
 		while (true){
-			try{
-				System.out.println("Recicla sus desechos inorgánicos? Si = 1, No = 2");
-				Desechos = scan.nextInt();
-				if (Desechos == 1){
-					System.out.println("");
-					break;
-				}
-				else if (Desechos == 2){
-					System.out.println("");
-					break;
-				}
-				else {
-					System.out.println("Por favor ingrese 1 = Si o 2 = No");
-				}
-				Desechos = scan.nextInt();
-			}
-			catch(InputMismatchException e){
-				System.out.println("Error: Usted no ha ingresado un numero.");
+			System.out.println("\nRecicla sus desechos inorganicos? Si = 1, No = 2\n");
+			Desechos = scan.nextInt();
+			if (Desechos == 1){
+				System.out.println("");
 				break;
+			}
+			else if (Desechos == 2){
+				System.out.println("");
+				break;
+			}
+			else {
+				System.out.println("\nPor favor ingrese 1 = Si o 2 = No\n");
 			}
 		}
 		return Desechos;
@@ -224,7 +209,8 @@ class Vista{
 		
 	}
 	public void Division(){
-		
+		for(int i = 0; i < 40; i++)
+			System.out.println();
 	}
 	public void Ascii(){
 		
