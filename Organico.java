@@ -18,16 +18,7 @@ public class Organico {
     private int pescado;
     private int cuatroSemanas = 4;
 
-//*****************************************************************************
-//Constructores
-//*****************************************************************************
-    public Organico(){
-        this.frutasVerduras = frutasVerduras;
-        this.pollo = pollo;
-        this.carne = carne;
-        this.cerdos = cerdos;
-        this.pescado = pescado;
-    }
+
 //*****************************************************************************
 //Metodos
 //*****************************************************************************
