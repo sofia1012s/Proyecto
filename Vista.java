@@ -17,6 +17,12 @@ class Vista{
 		return opcion;
 	}
 /**
+*Hace print el mensaje que se escribe en esta.
+**/
+	public void Print(String M){
+		System.out.println(M);
+	}
+/**
 *Mensaje de bienvenida al usuario.
 **/
 	public void Saludo(){
@@ -99,30 +105,6 @@ class Vista{
 		return Pescado;
 	}
 /**
-*Le pregunta al usuario su hace algun tipo de abono. De hacerlo le pide que ingrese 1, de no hacelo le pide que ingrese 2.
-*Crea un loop que se detiene hasta que se ingrese 1 o 2.
-*@return el valor que el usuario ingrese.
-**/
-	public int Abono(){
-		int Abono = 0;
-		while (true){
-			System.out.println("\nCon sus desechos orgánicos realiza algún tipo de abono? Si = 1, No = 2\n");
-			Abono = scan.nextInt();
-			if (Abono == 1){
-				System.out.println("");
-				break;
-			}
-			else if (Abono == 2){
-				System.out.println("");
-				break;
-			}
-			else {
-				System.out.println("\nPor favor ingrese 1 = Si o 2 = No\n");
-			}
-		}
-		return Abono;
-	}
-/**
 *Le pide al usuario la cantidad de botellas desechadas y guarda la información.
 *@return Devuelve el número de botellas desechadas.
 **/
@@ -183,36 +165,17 @@ class Vista{
 		return Lavar;
 	}
 /**
-*Le pregunta si recicla sus desechos y guarda la información.
-*@return Devuelve la respuesta del usuario.
+*Le enseña al usuario los resultados de la comparacion
+*@param dos Strings con mensaje y un int.
 **/
-	public int Desechos(){
-		int Desechos = 0;
-		while (true){
-			System.out.println("\nRecicla sus desechos inorganicos? Si = 1, No = 2\n");
-			Desechos = scan.nextInt();
-			if (Desechos == 1){
-				System.out.println("");
-				break;
-			}
-			else if (Desechos == 2){
-				System.out.println("");
-				break;
-			}
-			else {
-				System.out.println("\nPor favor ingrese 1 = Si o 2 = No\n");
-			}
-		}
-		return Desechos;
+	public void Resultados(String Con, int Num, String Con2){
+		System.out.println(Con + Num + Con2);
 	}
-	public void Resultados(){
-		
-	}
-	public void Division(){
-		for(int i = 0; i < 40; i++)
+/**
+*Para crear espacios o para despejar entre cada acción.
+**/
+	public void Division(int a){
+		for(int i = 0; i < a; i++)
 			System.out.println();
-	}
-	public void Ascii(){
-		
 	}
 }
