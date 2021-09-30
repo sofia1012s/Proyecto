@@ -182,7 +182,7 @@ public class Controlador{
 						vis.Division(2);
 						int[] A;
 						String[] B = {"agua","botellas","papel","bolsas","frutas y verduras","pollo","carne","cerdo","pescado"};
-						A = com.comparacionPersonaP(pp.getAguaPromedio(),ing.getTiempo(),pp.getBotellasPromedio(),ing.getBotellas(),pp.getPapelPromedio(),ing.getPapel(),pp.getBolsasPromedio(),ing.getBolsas(),pp.getFrutasVerdurasPromedio(),org.getFrutasVerduras(),pp.getPolloPromedio(),org.getPollo(),pp.getCarnePromedio(),org.getCarne(),pp.getCerdoPromedio(),org.getCerdo(),pp.getPescadossPromedio(),org.getPescado());
+						A = com.comparacionPersonaP(pp.getAguaPromedio(),ing.conversionAgua(),pp.getBotellasPromedio(),ing.conversionBotellas(),pp.getPapelPromedio(),ing.conversionPapel(),pp.getBolsasPromedio(),ing.conversionBolsas(),pp.getFrutasVerdurasPromedio(),org.conversionFrutasVerduras(),pp.getPolloPromedio(),org.conversionPollo(),pp.getCarnePromedio(),org.conversionCarne(),pp.getCerdoPromedio(),org.conversionCerdos(),pp.getPescadossPromedio(),org.conversionPescados());
 						for(int i = 0; i < A.length; i++){
 							if(A[i] == 1){
 								System.out.println("Su consumo de " + B[i] + " es mayor que el de la persona promedio.\n");
