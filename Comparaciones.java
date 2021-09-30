@@ -1,12 +1,6 @@
-public class Comparaciones {
+public class Comparaciones{
 
-    private Inorganico inorganico;
-    private Organico organico;
-    private PersonaPromedio personaP;
-    private Persona persona;
-
-    public int comparacionBotellas() {
-        int botellas = inorganico.getBotellas();
+    public int comparacionBotellas(int botellas){
         // botellas = cantidad de botellas en una semana
 
         // dimensiones botella promedio:
@@ -25,8 +19,7 @@ public class Comparaciones {
         return canchasSemana;
     }
 
-    public int comparacionPapel() {
-        int papel = inorganico.getPapel();
+    public int comparacionPapel(int papel) {
         // papel = cantidad de hojas de papel por semana
 
         // El libro Don Quijote de la mancha tiene aproximadamente 500 hojas
@@ -43,8 +36,7 @@ public class Comparaciones {
         return tiempo;
     }
 
-    public int comparacionAgua() {
-        int tiempo = inorganico.getTiempo();
+    public int comparacionAgua(int tiempo) {
         // tiempo es la cantidad de minutos que tarda la persona en bañarse
 
         // En promedio se gastan 20 litros de agua si se deja el grifo abierto por 1
@@ -61,8 +53,7 @@ public class Comparaciones {
         return dias;
     }
 
-    public int comparacionBolsas() {
-        int bolsas = inorganico.getBolsas();
+    public int comparacionBolsas(int bolsas) {
         // bolsas = cantidad de bolsas por semana que desecha la persona
         // Dimensiones bolsa de supermercado:
         // http://www.bolsaspolietileno.com/bolsas_camiseta.html
@@ -102,8 +93,7 @@ public class Comparaciones {
      * return personas; }
      */
 
-    public int comparacionVerduras() {
-        int frutasVerduras = organico.getFrutasVerduras();
+    public int comparacionVerduras(int frutasVerduras) {
         // frutasVerduras = libras de desechos de frutas y verduras a la semana
         // Cantidad de abono por kilo de verduras:
         // https://www.elperiodico.com/es/sociedad/20091025/kilo-residuos-convierte-300-gramos-135579
@@ -114,13 +104,11 @@ public class Comparaciones {
         return gramosAbono;
     }
 
-    public int comparacionPollo() {
-        int pollo = organico.getPollo();
+    public int comparacionPollo(int pollo, int edad) {
         // pollo = libras de pollo que consume la persona a la semana
         // peso de un pollo promedio:
         // https://www.puertasdecastilla.org/cuanto-pesa-un-pollo/
 
-        int edad = persona.getEdad(); // edad de la persona
         int semanasEdad = edad * 52; // edad de la persona en semanas
         int librasPollos = pollo * semanasEdad; // libras de pollo que ha comido en toda su vida
         int cantidadPollos = librasPollos / 5; // Cantidad de pollos en toda su vida
@@ -128,51 +116,43 @@ public class Comparaciones {
         return cantidadPollos;
     }
 
-    public int comparacionCarne() {
-        int carne = organico.getCarne();
+    public int comparacionCarne(int carne, int edad) {
         // carne = libras de carne que consume la persona a la semana
         // peso de una vaca promedio:
         // https://www.agronegocios.co/ganaderia/a-que-edad-y-con-que-peso-se-debe-sacrificar-el-ganado-segun-su-raza-2982496
 
-        int edad = persona.getEdad(); // edad de la persona
         int semanasEdad = edad * 52; // edad de la persona en semanas
         int librasCarne = carne * semanasEdad; // libras de carne que ha comido en toda su vida
         int cantidadVacas = librasCarne / 11023; // Cantidad de vacas que ha comido en toda su vida
         return cantidadVacas;
     }
 
-    public int comparacionCerdo() {
-        int cerdo = organico.getCerdo();
+    public int comparacionCerdo(int cerdo, int edad) {
         // cerdo es la cantidad de libras de cerdo que consume la persona
         // peso promedio de un cerdo:
         // https://razasporcinas.com/el-peso-de-los-cerdos-para-ir-a-mercado-sigue-aumentando-a-135-kg/
 
-        int edad = persona.getEdad(); // edad de la persona
         int semanasEdad = edad * 52; // edad de la persona en semanas
         int librasCerdo = cerdo * semanasEdad; // libras de cerdo que ha comido en toda su vida
         int cantidadCerdo = librasCerdo / 300; // Cantidad de cerdos que ha comido en toda su vida
         return cantidadCerdo;
     }
 
-    public int comparacionPescado() {
-        int pescado = organico.getPescado();
+    public int comparacionPescado(int pescado, int edad) {
         // pescado es la cantidad de libras de pescado que consume la persona
         // peso promedio de un pescado:
         // https://pescadordeportivo.net/2017/06/15/cuanto-llega-a-pesar-cada-pez/
 
-        int edad = persona.getEdad(); // edad de la persona
         int semanasEdad = edad * 52; // edad de la persona en semanas
         int librasPescado = pescado * semanasEdad; // libras de pescado que ha comido en toda su vida
         int cantidadPeces = librasPescado / 5; // cantidad de pescados
         return cantidadPeces;
     }
 
-    public int[] comparacionPersonaP() {
-        int[] comparaciones = new int[8];
+    public int[] comparacionPersonaP(int aguaP,int tiempo, int botellasP, int botellas,int papelP, int papel,int bolsasP, int bolsas,int frutasVerdurasP, int frutasVerduras,int polloP,int pollo,int carneP, int carne,int cerdoP,int cerdo,int pescadoP,int pescado) {
+        int[] comparaciones = new int[9];
 
         // Comparacion agua
-        int aguaP = personaP.getAguaPromedio(); // Litros al mes persona promedio
-        int tiempo = inorganico.conversionAgua(); // tiempo que tarda en bañarse la persona al mes
         int litrosDucha = 20 * tiempo; // litros que gasta por mes
 
         if (litrosDucha <= aguaP) { // si su consumo es menor o igual al de una persona promedio
@@ -182,8 +162,6 @@ public class Comparaciones {
         }
 
         // Comparacion botellas
-        int botellasP = personaP.getBotellasPromedio(); // botellas al mes persona promedio
-        int botellas = inorganico.getBotellas(); // botellas al mes persona
         if (botellas <= botellasP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[1] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
@@ -191,24 +169,18 @@ public class Comparaciones {
         }
 
         // Comparacion Papel
-        int papelP = personaP.getPapelPromedio(); // papel al mes persona promedio
-        int papel = inorganico.conversionPapel(); // papel al mes persona
         if (papel <= papelP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[2] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
             comparaciones[2] = 1; // se indica con un uno
         }
         // Comparacion bolsas
-        int bolsasP = personaP.getBolsasPromedio(); // bolsas al mes persona promedio
-        int bolsas = inorganico.conversionBolsas(); // bolsas al mes persona
         if (bolsas <= bolsasP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[3] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
             comparaciones[3] = 1; // se indica con un uno
         }
         // Comparacion frutas y verduras
-        int frutasVerdurasP = personaP.getFrutasVerdurasPromedio(); // Libras al mes persona promedio
-        int frutasVerduras = organico.conversionFrutasVerduras(); // Libras al mes persona
         if (frutasVerduras <= frutasVerdurasP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[4] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
@@ -216,8 +188,6 @@ public class Comparaciones {
         }
 
         // Comparacion pollo
-        int polloP = personaP.getPolloPromedio(); // Libras al mes persona promedio
-        int pollo = organico.conversionPollo(); // Libras al mes persona
         if (pollo <= polloP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[5] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
@@ -225,8 +195,6 @@ public class Comparaciones {
         }
 
         // Comparacion carne
-        int carneP = personaP.getCarnePromedio(); // Libras al mes persona promedio
-        int carne = organico.conversionCarne(); // Libras al mes persona
         if (carne <= carneP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[6] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
@@ -234,16 +202,12 @@ public class Comparaciones {
         }
 
         // Comparacion cerdo
-        int cerdoP = personaP.getCerdoPromedio(); // Libras al mes persona promedio
-        int cerdo = organico.conversionCerdos(); // Libras al mes persona
         if (cerdo <= cerdoP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[7] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
             comparaciones[7] = 1; // se indica con un uno
         }
         // Comparacion pescado
-        int pescadoP = personaP.getPescadossPromedio(); // Libras al mes persona promedio
-        int pescado = organico.conversionPescados(); // Libras al mes persona
         if (pescado <= pescadoP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[8] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
