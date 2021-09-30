@@ -60,7 +60,7 @@ class Vista{
 **/
 	public int FV(){
 		int FV;
-		System.out.println("\nCuántas frutas y verduras has desechado esta última semana? Ingresa la cantidad: \n");
+		System.out.println("\nCuántas frutas y verduras has desechado esta última semana? Ingresa la cantidad en libras: \n");
 		FV = scan.nextInt();
 		return FV;
 	}
