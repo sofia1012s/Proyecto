@@ -8,7 +8,15 @@ class Persona{
         return Nombre;
     }
 
+    public void setNombre(String Nombre) {
+        this.Nombre = Nombre;
+    }
+
     public int getEdad() {
         return Edad;
+    }
+
+    public void setEdad(int Edad) {
+        this.Edad= Edad;
     }
 }
