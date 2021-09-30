@@ -176,9 +176,9 @@ public class Controlador{
 						vis.Division(40);
 						System.out.println("\nResultados: \n");
 						vis.Resultados("\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de botellas por semana, se llenarian: ",com.comparacionBotellas(ing.getBotellas())," canchas de futbol cada semana.");
-						vis.Resultados("\nCon la cantidad de hojas que gasta por semana se podrian hacer:",com.comparacionPapel(ing.getPapel())," libros.");
+						vis.Resultados("\nCon la cantidad de hojas que gasta por semana, se tardaría: ",com.comparacionPapel(ing.getPapel())," semanas en imprimir el libro Quijote de la Mancha");
 						vis.Resultados("\nEl tiempo que tardas bañandote podria llenar una piscina en: ",com.comparacionAgua(ing.getTiempo())," dias.");
-						vis.Resultados("\nCon la cantidad de bolsas que tiras por semana llenarias: ",com.comparacionBolsas(ing.getBolsas())," canchas de baloncesto cada semana.");
+						vis.Resultados("\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de bolsas por semana, se llenarian: ",com.comparacionBolsas(ing.getBolsas())," canchas de baloncesto cada semana.");
 						vis.Division(2);
 						int[] A;
 						String[] B = {"agua","botellas","papel","bolsas","frutas y verduras","pollo","carne","cerdo","pescado"};

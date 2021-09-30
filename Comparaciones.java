@@ -1,6 +1,6 @@
-public class Comparaciones{
+public class Comparaciones {
 
-    public int comparacionBotellas(int botellas){
+    public int comparacionBotellas(int botellas) {
         // botellas = cantidad de botellas en una semana
 
         // dimensiones botella promedio:
@@ -64,9 +64,9 @@ public class Comparaciones{
 
         // Si toda la población de Guatemala (16,600,000) gastara la misma cantidad de
         // bolsas por semana:
-        int botellasPoblacion = (16600000 * bolsas);
+        int bolsasPoblacion = (16600000 * bolsas);
 
-        int canchasSemana = (botellasPoblacion) / (4200); // Cantidad de canchas de baloncesto que se llenarian por
+        int canchasSemana = (bolsasPoblacion) / (4200); // Cantidad de canchas de baloncesto que se llenarian por
                                                           // semana
         return canchasSemana;
     }
@@ -149,7 +149,9 @@ public class Comparaciones{
         return cantidadPeces;
     }
 
-    public int[] comparacionPersonaP(int aguaP,int tiempo, int botellasP, int botellas,int papelP, int papel,int bolsasP, int bolsas,int frutasVerdurasP, int frutasVerduras,int polloP,int pollo,int carneP, int carne,int cerdoP,int cerdo,int pescadoP,int pescado) {
+    public int[] comparacionPersonaP(int aguaP, int tiempo, int botellasP, int botellas, int papelP, int papel,
+            int bolsasP, int bolsas, int frutasVerdurasP, int frutasVerduras, int polloP, int pollo, int carneP,
+            int carne, int cerdoP, int cerdo, int pescadoP, int pescado) {
         int[] comparaciones = new int[9];
 
         // Comparacion agua
@@ -169,7 +171,8 @@ public class Comparaciones{
         }
 
         // Comparacion Papel
-        if (papel <= papelP) { // si su consumo es menor o igual al de una persona promedio
+        int papelLibras = (int) (papel * 0.17f);
+        if (papelLibras <= papelP) { // si su consumo es menor o igual al de una persona promedio
             comparaciones[2] = 0; // se indica con un cero
         } else { // de lo contrario, si su consumo es mayor
             comparaciones[2] = 1; // se indica con un uno
