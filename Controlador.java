@@ -30,7 +30,18 @@ public class Controlador{
 		}while(!p);
 		vis.Division(40);
 		while(opcion !=5){
-			opcion = vis.Menu(opcion);
+			do{
+				try{
+					vis = new Vista();
+					opcion = vis.Menu(opcion);
+					p = true;
+				}
+				catch(InputMismatchException ex){
+					vis.Division(40);
+					System.out.println("\nPor favor, ingrsar un numero\n");
+					p = false;
+				}
+			}while(!p);
 			switch(opcion){
 				case 1:
 				do{
