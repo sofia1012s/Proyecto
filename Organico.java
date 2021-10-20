@@ -16,7 +16,6 @@ public class Organico extends tipoBasura{
     private int carne;
     private int cerdos;
     private int pescado;
-    private int cuatroSemanas = 4;
 
     // *****************************************************************************
     // Metodos
