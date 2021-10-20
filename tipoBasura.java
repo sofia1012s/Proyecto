@@ -1,4 +1,4 @@
-public abstract class tipoBasura {
+public class tipoBasura {
     
     protected int frutasVerduras;
     protected int pollo;
@@ -6,5 +6,12 @@ public abstract class tipoBasura {
     protected int cerdos;
     protected int pescado;
     protected int cuatroSemanas = 4;
+
+    public int conversionMes(int varible)
+    {
+        int conversion = varible * 4;
+
+        return conversion;
+    }
 
 }
