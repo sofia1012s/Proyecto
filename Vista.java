@@ -43,7 +43,7 @@ class Vista {
 	 * https://www.ecologiaverde.com/como-hacer-abono-organico-casero-para-plantas-1275.html
 	 * 11
 	 **/
-	public String Recomendaciones() {
+	public void Recomendaciones() {
 		String[] Recomendaciones = new String[] {
 				"\n-Reduce tus duchas al menor tiempo posible para no gastar el agua.\n",
 				"\n-Cierra el grifo cuando no lo necesites (al cepillarte los dientes, al enjabonarte, al lavar los platos, etc)\n",
@@ -60,14 +60,17 @@ class Vista {
 				"\n-Cambia tus bombillas por focos ahorrativos o LEDs\n",
 				"\n-Busca centros de reciclaje cerca de tu hogar para depositar todas las botellas y papel que utilizas\n",
 				"\n-Consume productos ecológicos, no solo los puedes encontrar en alimentación, también en limpieza, moda o cosmética.\n",
-				"\nUtiliza bolsas reciclables cuando vayas a comprar.\n",
-				"\nEvita los productos envasados en plástico, utiliza los que están envasados en papel, cartón o vidrio.\n",
-				"\nCompra productos a granel como legumbres, frutos secos, jabones etc.\n",
-				"\nAntes de desechar ropa, accesorios, libros, juguetes, aparatos electrónicos en buen estado e incluso recipientes de vidrio, cartón y latas, piensa en cómo darles un nuevo uso. \n" };
+				"\n-Utiliza bolsas reciclables cuando vayas a comprar.\n",
+				"\n-Evita los productos envasados en plástico, utiliza los que están envasados en papel, cartón o vidrio.\n",
+				"\n-Compra productos a granel como legumbres, frutos secos, jabones etc.\n",
+				"\n-Antes de desechar ropa, accesorios, libros, juguetes, aparatos electrónicos en buen estado e incluso recipientes de vidrio, cartón y latas, piensa en cómo darles un nuevo uso. \n" };
 
-		int rnd = new Random().nextInt(Recomendaciones.length);
+		int rnd1 = new Random().nextInt(Recomendaciones.length);
+		int rnd2 = new Random().nextInt(Recomendaciones.length);
+		int rnd3 = new Random().nextInt(Recomendaciones.length);
 
-		return Recomendaciones[rnd];
+		System.out.println(Recomendaciones[rnd1] + Recomendaciones[rnd2] + Recomendaciones[rnd3]);
+
 	}
 
 	/**
