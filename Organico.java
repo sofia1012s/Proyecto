@@ -53,7 +53,7 @@ public class Organico extends tipoBasura{
         this.carne = carne;
     }
 
-    public void setCerdo(int cerdo) {
+    public void setCerdo(int cerdos) {
         this.cerdos = cerdos;
     }
 
