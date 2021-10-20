@@ -16,7 +16,6 @@ public class Inorganico extends tipoBasura{
     private int papel;
     private int tiempo;
     private int bolsas;
-    private int cuatroSemanas = 4;
 
     // *****************************************************************************
     // Metodos
