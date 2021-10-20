@@ -53,27 +53,6 @@ public class Inorganico extends tipoBasura{
         this.bolsas = bolsas;
     }
 
-    public int conversionBotellas() {
-        /**
-         * Realiza una multiplicación de la cantidad de botellas por semana por 4 para
-         * convertir la frecuencia a menusal.
-         */
-
-        int conversion = botellas * cuatroSemanas;
-        return conversion;
-
-    }
-
-    public int conversionPapel() {
-        /**
-         * Realiza una multiplicación de la cantidad de papel por semana por 4 para
-         * convertir la frecuencia a menusal.
-         */
-        int conversion = papel * cuatroSemanas;
-        return conversion;
-
-    }
-
     public int conversionAgua() {
         /**
          * Realiza una multiplicación de la cantidad de tiempo por 4 para convertir la
@@ -85,12 +64,4 @@ public class Inorganico extends tipoBasura{
 
     }
 
-    public int conversionBolsas() {
-        /**
-         * Realiza una multiplicación de la cantidad de bolsas por semana por 4 para
-         * convertir la frecuencia a menusal.
-         */
-        int conversion = bolsas * cuatroSemanas;
-        return conversion;
-    }
 }
