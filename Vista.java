@@ -11,11 +11,47 @@ class Vista{
 *@return opcion que eligio el usuario.
 **/
 	public int Menu(int opcion){
-		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ingresar consumos inorganicos\n" + "3. Ver resultados\n" + "4. Recomendaciones\n" + "5. Salir\n";
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ingresar consumos inorganicos\n" + "3. Ver resultados\n" + "4. Recomendaciones\n" + "5. bibliografia\n" + "6. Salir\n";
 		System.out.println(Mensaje);
 		opcion = scan.nextInt();
 		return opcion;
 	}
+
+/**
+*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
+*@return opcion que eligio el usuario.
+**/
+public int Menu2(int opcion){
+	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos inorganicos\n" + "2. Ver resultados\n" + "3. Recomendaciones\n" + "4. bibliografia\n" + "5. Salir\n";
+	System.out.println(Mensaje);
+	opcion = scan.nextInt();
+	return opcion;
+}
+
+
+/**
+*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
+*@return opcion que eligio el usuario.
+**/
+public int Menu3(int opcion){
+	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ver resultados\n" + "3. Recomendaciones\n" + "4. bibliografia\n" + "5. Salir\n";
+	System.out.println(Mensaje);
+	opcion = scan.nextInt();
+	return opcion;
+}
+
+/**
+*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
+*@return opcion que eligio el usuario.
+**/
+public int Menu4(int opcion){
+	String Mensaje = "\nQue desea hacer?\n" + "1. Ver resultados\n" + "2. Recomendaciones\n" + "3. bibliografia\n" + "4. Salir\n";
+	System.out.println(Mensaje);
+	opcion = scan.nextInt();
+	return opcion;
+}
+
+
 /**
 *Hace print el mensaje que se escribe en esta.
 **/
@@ -178,4 +214,39 @@ class Vista{
 		for(int i = 0; i < a; i++)
 			System.out.println();
 	}
+
+
+/**
+*Bibliografia
+**/
+	public void Bibliografia(){
+		System.out.println("Banco Mundial. (2018, 20 septiembre). El futuro de la gestión de los desechos sólidos.");
+		System.out.println("World Bank.");
+		System.out.println("https://www.bancomundial.org/es/news/immersive-story/2018/09/20/what-a-waste-an-update");
+		System.out.println("d-look-into-the-future-of-solid-waste-management");
+		System.out.println("");
+		System.out.println("Laville, S., & Taylor, M. (2017, 30 junio). El mundo compra un millón de botellas de plástico");
+		System.out.println("por minuto que acaban en vertederos o en el mar. ElDiario.es. ");
+		System.out.println("https://www.eldiario.es/internacional/theguardian/compra-botellas-plastico-mayoria-vertedero");
+		System.out.println("s_1_3309129.html ");
+		System.out.println("");
+		System.out.println("Sevilla, B. (2019). Papel y cartón: consumo mundial 2006-2017 [Conjunto de datos]. ");
+		System.out.println("Asociación de Fábricas Alemanas de Papel. ");
+		System.out.println("https://es.statista.com/estadisticas/600580/consumo-mundial-de-papel-y-carton/ 	");
+		System.out.println("");
+		System.out.println("Fundación Española del Corazón. (2020). Carnes rojas. 20/08/2021, de Fundación ");
+		System.out.println("Española del Corazón Sitio web: ");
+		System.out.println("https://fundaciondelcorazon.com/corazon-facil/blog-impulso-vital/2412-modera-consumo-car");
+		System.out.println("ne-roja.html 	");
+		System.out.println("");
+		System.out.println("González, A. (2019, 26 mayo). Hacia una gestión de la basura más eficiente. elPeriodico. ");
+		System.out.println("https://elperiodico.com.gt/noticias/domingo/2019/05/26/hacia-una-gestion-de-la-basura-mas-");
+		System.out.println("eficiente/	");
+		System.out.println("");
+		System.out.println("Ministerio de ambiente y recursos naturales. (2016, 22, abril) ");
+		System.out.println("https://www.marn.gob.gt/noticias/actualidad/Guatemala_un_pas_an_con_poca_conciencia_");
+		System.out.println("ambiental");
+
+	}
 }
+
