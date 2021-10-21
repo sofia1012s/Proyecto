@@ -11,27 +11,24 @@ class Vista {
 *@return opcion que eligio el usuario.
 **/
 	public int Menu(int opcion){
-		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ingresar consumos inorganicos\n" + "3. Ver resultados\n" + "4. Recomendaciones\n" + "5. bibliografia\n" + "6. Salir\n";
-
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ingresar consumos inorganicos\n" + "3. bibliografia\n" + "4. Salir\n";
+		System.out.println(Mensaje);
+		opcion = scan.nextInt();
+		return opcion;
+	}
 	/**
 	 * Crea un menu el cual le muestra las opciones y le pide un input al usuario.
 	 * 
 	 * @return opcion que eligio el usuario.
 	 **/
-	public int Menu(int opcion) {
-		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n"
-				+ "2. Ingresar consumos inorganicos\n 3. Salir\n";
-		System.out.println(Mensaje);
-		opcion = scan.nextInt();
-		return opcion;
-	}
+
 
 /**
 *Crea un menu el cual le muestra las opciones y le pide un input al usuario.
 *@return opcion que eligio el usuario.
 **/
 public int Menu2(int opcion){
-	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos inorganicos\n" + "2. Ver resultados\n" + "3. Recomendaciones\n" + "4. bibliografia\n" + "5. Salir\n";
+	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos inorganicos\n" + "2. bibliografia\n" + "3. Salir\n";
 	System.out.println(Mensaje);
 	opcion = scan.nextInt();
 	return opcion;
@@ -43,7 +40,7 @@ public int Menu2(int opcion){
 *@return opcion que eligio el usuario.
 **/
 public int Menu3(int opcion){
-	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ver resultados\n" + "3. Recomendaciones\n" + "4. bibliografia\n" + "5. Salir\n";
+	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. bibliografia\n" + "3. Salir\n";
 	System.out.println(Mensaje);
 	opcion = scan.nextInt();
 	return opcion;
@@ -64,7 +61,6 @@ public int Menu4(int opcion){
 /**
 *Hace print el mensaje que se escribe en esta.
 **/
-	public void Print(String M){
 	//"3. Ver resultados\n" + "4. Recomendaciones\n"
 	/**
 	 * Hace print el mensaje que se escribe en esta.

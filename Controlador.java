@@ -173,65 +173,11 @@ public class Controlador {
 					} while (!p);
 					break;
 				case 3:
-					do {
-						try {
-							com.comparacionBotellas(ing.getBotellas());
-							com.comparacionPapel(ing.getPapel());
-							com.comparacionAgua(ing.getTiempo());
-							com.comparacionBolsas(ing.getBolsas());
-							vis.Division(40);
-							System.out.println("\nResultados: \n");
-							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de botellas por semana, se llenarian: ",
-									com.comparacionBotellas(ing.getBotellas()), " canchas de futbol cada semana.");
-							vis.Resultados("\nCon la cantidad de hojas que gasta por semana, se tardaría: ",
-									com.comparacionPapel(ing.getPapel()),
-									" semanas en imprimir el libro Quijote de la Mancha");
-							vis.Resultados("\nEl tiempo que tardas bañandote podria llenar una piscina en: ",
-									com.comparacionAgua(ing.getTiempo()), " dias.");
-							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de bolsas por semana, se llenarian: ",
-									com.comparacionBolsas(ing.getBolsas()), " canchas de baloncesto cada semana.");
-							vis.Division(2);
-							int[] A;
-							String[] B = { "agua", "botellas", "papel", "bolsas", "frutas y verduras", "pollo", "carne",
-									"cerdo", "pescado" };
-							A = com.comparacionPersonaP(pp.getAguaPromedio(), ing.conversionAgua(),
-									pp.getBotellasPromedio(), basura.conversionMes(ing.getBotellas()), pp.getPapelPromedio(),
-									basura.conversionMes(ing.getPapel()), pp.getBolsasPromedio(), basura.conversionMes(ing.getBolsas()),
-									pp.getFrutasVerdurasPromedio(), basura.conversionMes(org.getFrutasVerduras()), pp.getPolloPromedio(),
-									basura.conversionMes(org.getPollo()), pp.getCarnePromedio(), basura.conversionMes(org.getCarne()),
-									pp.getCerdoPromedio(), basura.conversionMes(org.getCerdo()), pp.getPescadossPromedio(),
-									basura.conversionMes(org.getCerdo()));
-							for (int i = 0; i < A.length; i++) {
-								if (A[i] == 1) {
-									System.out.println(
-											"Su consumo de " + B[i] + " es mayor que el de la persona promedio.\n");
-								} else {
-									System.out.println(
-											"Su consumo de " + B[i] + " esta por debajo del de la persona promedio.\n");
-								}
-							}
-							p = true;
-						} catch (ArithmeticException ex) {
-							vis.Division(40);
-							System.out.println(
-									"\nRecordatorio: \n \nSi desea obtener los resultados por favor, ingrese los consumos organicos e inorganicos.\n");
-							break;
-						} catch (Exception e) {
-							System.out.println("\nHubo un error, intente de nuevo.\n");
-							break;
-						}
-					} while (!p);
-					break;
-				case 4:
-					vis.Division(40);
-					System.out.println("\nRecomendaciones: \n");
-					vis.Recomendaciones();
-					break;
-				case 5:
 					vis.Bibliografia();
 					break;
+				
+				case 4:
+					opcion = 6;
 					
 				}
 
@@ -316,66 +262,10 @@ public class Controlador {
 					} while (!p);
 					break;
 				case 2:
-					do {
-						try {
-							com.comparacionBotellas(ing.getBotellas());
-							com.comparacionPapel(ing.getPapel());
-							com.comparacionAgua(ing.getTiempo());
-							com.comparacionBolsas(ing.getBolsas());
-							vis.Division(40);
-							System.out.println("\nResultados: \n");
-							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de botellas por semana, se llenarian: ",
-									com.comparacionBotellas(ing.getBotellas()), " canchas de futbol cada semana.");
-							vis.Resultados("\nCon la cantidad de hojas que gasta por semana, se tardaría: ",
-									com.comparacionPapel(ing.getPapel()),
-									" semanas en imprimir el libro Quijote de la Mancha");
-							vis.Resultados("\nEl tiempo que tardas bañandote podria llenar una piscina en: ",
-									com.comparacionAgua(ing.getTiempo()), " dias.");
-							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de bolsas por semana, se llenarian: ",
-									com.comparacionBolsas(ing.getBolsas()), " canchas de baloncesto cada semana.");
-							vis.Division(2);
-							int[] A;
-							String[] B = { "agua", "botellas", "papel", "bolsas", "frutas y verduras", "pollo", "carne",
-									"cerdo", "pescado" };
-							A = com.comparacionPersonaP(pp.getAguaPromedio(), ing.conversionAgua(),
-									pp.getBotellasPromedio(), basura.conversionMes(ing.getBotellas()), pp.getPapelPromedio(),
-									basura.conversionMes(ing.getPapel()), pp.getBolsasPromedio(), basura.conversionMes(ing.getBolsas()),
-									pp.getFrutasVerdurasPromedio(), basura.conversionMes(org.getFrutasVerduras()), pp.getPolloPromedio(),
-									basura.conversionMes(org.getPollo()), pp.getCarnePromedio(), basura.conversionMes(org.getCarne()),
-									pp.getCerdoPromedio(), basura.conversionMes(org.getCerdo()), pp.getPescadossPromedio(),
-									basura.conversionMes(org.getCerdo()));
-							for (int i = 0; i < A.length; i++) {
-								if (A[i] == 1) {
-									System.out.println(
-											"Su consumo de " + B[i] + " es mayor que el de la persona promedio.\n");
-								} else {
-									System.out.println(
-											"Su consumo de " + B[i] + " esta por debajo del de la persona promedio.\n");
-								}
-							}
-							p = true;
-						} catch (ArithmeticException ex) {
-							vis.Division(40);
-							System.out.println(
-									"\nRecordatorio: \n \nSi desea obtener los resultados por favor, ingrese los consumos organicos e inorganicos.\n");
-							break;
-						} catch (Exception e) {
-							System.out.println("\nHubo un error, intente de nuevo.\n");
-							break;
-						}
-					} while (!p);
-					break;
-				case 3:
-					vis.Division(40);
-					System.out.println("\nRecomendaciones: \n");
-					vis.Recomendaciones();
-					break;
-
-				case 4:
 					vis.Bibliografia();
 					break;
+				case 3:
+					opcion = 6;
 				}
 
 			}
@@ -458,68 +348,12 @@ public class Controlador {
 						}
 					} while (!p);
 					break;
-				case 2:
-					do {
-						try {
-							com.comparacionBotellas(ing.getBotellas());
-							com.comparacionPapel(ing.getPapel());
-							com.comparacionAgua(ing.getTiempo());
-							com.comparacionBolsas(ing.getBolsas());
-							vis.Division(40);
-							System.out.println("\nResultados: \n");
-							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de botellas por semana, se llenarian: ",
-									com.comparacionBotellas(ing.getBotellas()), " canchas de futbol cada semana.");
-							vis.Resultados("\nCon la cantidad de hojas que gasta por semana, se tardaría: ",
-									com.comparacionPapel(ing.getPapel()),
-									" semanas en imprimir el libro Quijote de la Mancha");
-							vis.Resultados("\nEl tiempo que tardas bañandote podria llenar una piscina en: ",
-									com.comparacionAgua(ing.getTiempo()), " dias.");
-							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de bolsas por semana, se llenarian: ",
-									com.comparacionBolsas(ing.getBolsas()), " canchas de baloncesto cada semana.");
-							vis.Division(2);
-							int[] A;
-							String[] B = { "agua", "botellas", "papel", "bolsas", "frutas y verduras", "pollo", "carne",
-									"cerdo", "pescado" };
-							A = com.comparacionPersonaP(pp.getAguaPromedio(), ing.conversionAgua(),
-									pp.getBotellasPromedio(), basura.conversionMes(ing.getBotellas()), pp.getPapelPromedio(),
-									basura.conversionMes(ing.getPapel()), pp.getBolsasPromedio(), basura.conversionMes(ing.getBolsas()),
-									pp.getFrutasVerdurasPromedio(), basura.conversionMes(org.getFrutasVerduras()), pp.getPolloPromedio(),
-									basura.conversionMes(org.getPollo()), pp.getCarnePromedio(), basura.conversionMes(org.getCarne()),
-									pp.getCerdoPromedio(), basura.conversionMes(org.getCerdo()), pp.getPescadossPromedio(),
-									basura.conversionMes(org.getCerdo()));
-							for (int i = 0; i < A.length; i++) {
-								if (A[i] == 1) {
-									System.out.println(
-											"Su consumo de " + B[i] + " es mayor que el de la persona promedio.\n");
-								} else {
-									System.out.println(
-											"Su consumo de " + B[i] + " esta por debajo del de la persona promedio.\n");
-								}
-							}
-							p = true;
-						} catch (ArithmeticException ex) {
-							vis.Division(40);
-							System.out.println(
-									"\nRecordatorio: \n \nSi desea obtener los resultados por favor, ingrese los consumos organicos e inorganicos.\n");
-							break;
-						} catch (Exception e) {
-							System.out.println("\nHubo un error, intente de nuevo.\n");
-							break;
-						}
-					} while (!p);
-					break;
-				case 3:
-					vis.Division(40);
-					System.out.println("\nRecomendaciones: \n");
-					vis.Recomendaciones();
-					break;
 
-				
-				case 4:
+				case 2:
 					vis.Bibliografia();
 					break;
+				case 3:
+					opcion = 6;
 				}
 
 			}
@@ -601,6 +435,8 @@ public class Controlador {
 				case 3:
 					vis.Bibliografia();
 					break;
+				case 4:
+					opcion = 6;
 				}
 
 			}
