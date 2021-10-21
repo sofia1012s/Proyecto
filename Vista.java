@@ -14,12 +14,12 @@ class Vista {
 	 **/
 	public int Menu(int opcion) {
 		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n"
-				+ "2. Ingresar consumos inorganicos\n" + "3. Ver resultados\n" + "4. Recomendaciones\n" + "5. Salir\n";
+				+ "2. Ingresar consumos inorganicos\n 3. Salir\n";
 		System.out.println(Mensaje);
 		opcion = scan.nextInt();
 		return opcion;
 	}
-
+	//"3. Ver resultados\n" + "4. Recomendaciones\n"
 	/**
 	 * Hace print el mensaje que se escribe en esta.
 	 **/
@@ -33,7 +33,7 @@ class Vista {
 	public void Saludo() {
 		System.out.println("\nBienvenido al programa de concientización sobre el medio ambiente\n"
 				+ "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. De todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n"
-				+ "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, con datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n"
+				+ "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, utilizaremos datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n"
 				+ "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación de cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
 	}
 
