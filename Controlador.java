@@ -1,7 +1,24 @@
+
+/******************************************************************************
+ * Controlador.java
+ * 
+ * @author Taewung Heo
+ * @author Héctor de León
+ * @author Jeremy Mejía
+ * @author Sofía Salguero
+ * @version 21/10/2021 
+ * 
+ * Clase Controlador, se encarga de unir las distintas clases para tener 
+ * el código completo funcional
+ ******************************************************************************/
 import java.util.*;
 
 public class Controlador {
 
+	/**
+	 * @param args 
+	 * Método main para ejecutar
+	 */
 	public static void main(String[] args) {
 		Vista vis = new Vista();
 		PersonaPromedio pp = new PersonaPromedio();
@@ -32,20 +49,20 @@ public class Controlador {
 		} while (!p);
 		vis.Division(40);
 		while (opcion != 6) {
-			//if para eliminar opciones que ya se usaron
-			if(Organico == 0 && Inorganico == 0){
+			// if para eliminar opciones que ya se usaron
+			if (Organico == 0 && Inorganico == 0) {
 
 				do {
 					try {
 						vis = new Vista();
 						opcion = vis.Menu(opcion);
-							//ifs para cambiar el estado de los int Organico e inorganico
-							if(opcion == 1){
-								Organico = 1;
-							}
-							if(opcion == 2){
-								Inorganico = 1;
-							}
+						// ifs para cambiar el estado de los int Organico e inorganico
+						if (opcion == 1) {
+							Organico = 1;
+						}
+						if (opcion == 2) {
+							Inorganico = 1;
+						}
 						p = true;
 					} catch (InputMismatchException ex) {
 						vis.Division(40);
@@ -175,25 +192,24 @@ public class Controlador {
 				case 3:
 					vis.Bibliografia();
 					break;
-				
+
 				case 4:
 					opcion = 6;
-					
+
 				}
 
 			}
 
-			if(Organico == 1 && Inorganico == 0){
+			if (Organico == 1 && Inorganico == 0) {
 
-				
 				do {
 					try {
 						vis = new Vista();
 						opcion = vis.Menu2(opcion);
-							//ifs para cambiar el estado de los int Organico e inorganico
-							if(opcion == 1){
-								Inorganico = 1;
-							}
+						// ifs para cambiar el estado de los int Organico e inorganico
+						if (opcion == 1) {
+							Inorganico = 1;
+						}
 						p = true;
 					} catch (InputMismatchException ex) {
 						vis.Division(40);
@@ -270,17 +286,16 @@ public class Controlador {
 
 			}
 
-			if(Organico == 0 && Inorganico == 1){
+			if (Organico == 0 && Inorganico == 1) {
 
-				
 				do {
 					try {
 						vis = new Vista();
 						opcion = vis.Menu3(opcion);
-							//ifs para cambiar el estado de los int Organico e inorganico
-							if(opcion == 1){
-								Organico = 1;
-							}
+						// ifs para cambiar el estado de los int Organico e inorganico
+						if (opcion == 1) {
+							Organico = 1;
+						}
 						p = true;
 					} catch (InputMismatchException ex) {
 						vis.Division(40);
@@ -358,9 +373,8 @@ public class Controlador {
 
 			}
 
-			if(Organico == 1 && Inorganico == 1){
+			if (Organico == 1 && Inorganico == 1) {
 
-				
 				do {
 					try {
 						vis = new Vista();
@@ -398,11 +412,13 @@ public class Controlador {
 							String[] B = { "agua", "botellas", "papel", "bolsas", "frutas y verduras", "pollo", "carne",
 									"cerdo", "pescado" };
 							A = com.comparacionPersonaP(pp.getAguaPromedio(), ing.conversionAgua(),
-									pp.getBotellasPromedio(), basura.conversionMes(ing.getBotellas()), pp.getPapelPromedio(),
-									basura.conversionMes(ing.getPapel()), pp.getBolsasPromedio(), basura.conversionMes(ing.getBolsas()),
-									pp.getFrutasVerdurasPromedio(), basura.conversionMes(org.getFrutasVerduras()), pp.getPolloPromedio(),
-									basura.conversionMes(org.getPollo()), pp.getCarnePromedio(), basura.conversionMes(org.getCarne()),
-									pp.getCerdoPromedio(), basura.conversionMes(org.getCerdo()), pp.getPescadossPromedio(),
+									pp.getBotellasPromedio(), basura.conversionMes(ing.getBotellas()),
+									pp.getPapelPromedio(), basura.conversionMes(ing.getPapel()), pp.getBolsasPromedio(),
+									basura.conversionMes(ing.getBolsas()), pp.getFrutasVerdurasPromedio(),
+									basura.conversionMes(org.getFrutasVerduras()), pp.getPolloPromedio(),
+									basura.conversionMes(org.getPollo()), pp.getCarnePromedio(),
+									basura.conversionMes(org.getCarne()), pp.getCerdoPromedio(),
+									basura.conversionMes(org.getCerdo()), pp.getPescadossPromedio(),
 									basura.conversionMes(org.getCerdo()));
 							for (int i = 0; i < A.length; i++) {
 								if (A[i] == 1) {
@@ -431,7 +447,6 @@ public class Controlador {
 					vis.Recomendaciones();
 					break;
 
-				
 				case 3:
 					vis.Bibliografia();
 					break;

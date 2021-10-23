@@ -1,3 +1,18 @@
+
+/******************************************************************************
+ * Vista.java
+ * 
+ * @author Taewung Heo
+ * @author Héctor de León
+ * @author Jeremy Mejía
+ * @author Sofía Salguero
+ * 
+ * @version 21/10/2021 
+ * 
+ * Clase Vista, tiene los métodos necesarios para brindarle una interfaz al 
+ * usuario
+ ******************************************************************************/
+
 import java.util.*;
 
 class Vista {
@@ -6,63 +21,67 @@ class Vista {
 	public Vista() {
 		scan = new Scanner(System.in);
 	}
-/**
-*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
-*@return opcion que eligio el usuario.
-**/
-	public int Menu(int opcion){
-		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. Ingresar consumos inorganicos\n" + "3. bibliografia\n" + "4. Salir\n";
-		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n" 
-		+ Mensaje);
-		opcion = scan.nextInt();
-		return opcion;
-	}
+
 	/**
 	 * Crea un menu el cual le muestra las opciones y le pide un input al usuario.
 	 * 
 	 * @return opcion que eligio el usuario.
 	 **/
+	public int Menu(int opcion) {
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n"
+				+ "2. Ingresar consumos inorganicos\n" + "3. bibliografia\n" + "4. Salir\n";
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ Mensaje);
+		opcion = scan.nextInt();
+		return opcion;
+	}
 
+	/**
+	 * Crea un menu el cual le muestra las opciones y le pide un input al usuario.
+	 * 
+	 * @return opcion que eligio el usuario.
+	 **/
+	public int Menu2(int opcion) {
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos inorganicos\n" + "2. bibliografia\n"
+				+ "3. Salir\n";
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ Mensaje);
+		opcion = scan.nextInt();
+		return opcion;
+	}
 
-/**
-*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
-*@return opcion que eligio el usuario.
-**/
-public int Menu2(int opcion){
-	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos inorganicos\n" + "2. bibliografia\n" + "3. Salir\n";
-	System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n" + Mensaje);
-	opcion = scan.nextInt();
-	return opcion;
-}
+	/**
+	 * Crea un menu el cual le muestra las opciones y le pide un input al usuario.
+	 * 
+	 * @return opcion que eligio el usuario.
+	 **/
+	public int Menu3(int opcion) {
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. bibliografia\n"
+				+ "3. Salir\n";
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ Mensaje);
+		opcion = scan.nextInt();
+		return opcion;
+	}
 
+	/**
+	 * Crea un menu el cual le muestra las opciones y le pide un input al usuario.
+	 * 
+	 * @return opcion que eligio el usuario.
+	 **/
+	public int Menu4(int opcion) {
+		String Mensaje = "\nQue desea hacer?\n" + "1. Ver resultados\n" + "2. Recomendaciones\n" + "3. bibliografia\n"
+				+ "4. Salir\n";
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ Mensaje);
+		opcion = scan.nextInt();
+		return opcion;
+	}
 
-/**
-*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
-*@return opcion que eligio el usuario.
-**/
-public int Menu3(int opcion){
-	String Mensaje = "\nQue desea hacer?\n" + "1. Ingresar consumos orgánicos\n" + "2. bibliografia\n" + "3. Salir\n";
-	System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n" + Mensaje);
-	opcion = scan.nextInt();
-	return opcion;
-}
-
-/**
-*Crea un menu el cual le muestra las opciones y le pide un input al usuario.
-*@return opcion que eligio el usuario.
-**/
-public int Menu4(int opcion){
-	String Mensaje = "\nQue desea hacer?\n" + "1. Ver resultados\n" + "2. Recomendaciones\n" + "3. bibliografia\n" + "4. Salir\n";
-	System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n" + Mensaje);
-	opcion = scan.nextInt();
-	return opcion;
-}
-
-
-/**
-*Hace print el mensaje que se escribe en esta.
-**/
-	//"3. Ver resultados\n" + "4. Recomendaciones\n"
 	/**
 	 * Hace print el mensaje que se escribe en esta.
 	 **/
@@ -74,11 +93,12 @@ public int Menu4(int opcion){
 	 * Mensaje de bienvenida al usuario.
 	 **/
 	public void Saludo() {
-		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-				+ "\nBienvenido al programa de concientización sobre el medio ambiente\n"
-				+ "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. De todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n"
-				+ "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, utilizaremos datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n"
-				+ "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación de cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nBienvenido al programa de concientización sobre el medio ambiente\n"
+						+ "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. De todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n"
+						+ "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, utilizaremos datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n"
+						+ "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación de cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
 	}
 
 	/**
@@ -113,8 +133,9 @@ public int Menu4(int opcion){
 		int rnd2 = new Random().nextInt(Recomendaciones.length);
 		int rnd3 = new Random().nextInt(Recomendaciones.length);
 
-		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ Recomendaciones[rnd1] + Recomendaciones[rnd2] + Recomendaciones[rnd3]);
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ Recomendaciones[rnd1] + Recomendaciones[rnd2] + Recomendaciones[rnd3]);
 
 	}
 
@@ -125,8 +146,9 @@ public int Menu4(int opcion){
 	 **/
 	public String Nombre() {
 		String Nombre;
-		System.out.println("*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nPor favor, ingrese sus datos\n" + "Ingrese su nombre: \n");
+		System.out.println(
+				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nPor favor, ingrese sus datos\n" + "Ingrese su nombre: \n");
 		Nombre = scan.nextLine();
 		return Nombre;
 	}
@@ -138,8 +160,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Edad() {
 		int Edad;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nIngrese su edad: \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nIngrese su edad: \n");
 		Edad = scan.nextInt();
 		return Edad;
 	}
@@ -152,8 +175,9 @@ public int Menu4(int opcion){
 	 **/
 	public int FV() {
 		int FV;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-				+ "\nCuántas frutas y verduras has desechado esta última semana? Ingresa la cantidad en libras (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuántas frutas y verduras has desechado esta última semana? Ingresa la cantidad en libras (números): \n");
 		FV = scan.nextInt();
 		return FV;
 	}
@@ -166,8 +190,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Pollo() {
 		int Pollo;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-				+ "\nCuánto carne de pollo has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuánto carne de pollo has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
 		Pollo = scan.nextInt();
 		return Pollo;
 	}
@@ -180,8 +205,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Carne() {
 		int Carne;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nCuánta carne has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuánta carne has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
 		Carne = scan.nextInt();
 		return Carne;
 	}
@@ -194,8 +220,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Cerdo() {
 		int Cerdo;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-				+ "\nCuánta carne de cerdo has consumido esta última semana? Ingresa un aproximado en libras  (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuánta carne de cerdo has consumido esta última semana? Ingresa un aproximado en libras  (números): \n");
 		Cerdo = scan.nextInt();
 		return Cerdo;
 	}
@@ -208,8 +235,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Pescado() {
 		int Pescado;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-				+ "\nCuánta carne de pescado has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuánta carne de pescado has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
 		Pescado = scan.nextInt();
 		return Pescado;
 	}
@@ -222,8 +250,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Botellas() {
 		int Botellas;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nCuantas botellas has desechado esta ultima semana? Ingresa la cantidad (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuantas botellas has desechado esta ultima semana? Ingresa la cantidad (números): \n");
 		Botellas = scan.nextInt();
 		return Botellas;
 	}
@@ -235,8 +264,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Papel() {
 		int Papel;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nCuantas hojas de papel has usado esta ultima semana? Ingresa la cantidad (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuantas hojas de papel has usado esta ultima semana? Ingresa la cantidad (números): \n");
 		Papel = scan.nextInt();
 		return Papel;
 	}
@@ -248,8 +278,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Tiempo() {
 		int Tiempo;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nCuanto tiempo tardas en bañarte? Ingresa la cantidad en minutos  (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuanto tiempo tardas en bañarte? Ingresa la cantidad en minutos  (números): \n");
 		Tiempo = scan.nextInt();
 		return Tiempo;
 	}
@@ -261,8 +292,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Bolsas() {
 		int Bolsas;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nCuantas bolsas plasticas deshechas a la semana? Ingresa la cantidad (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuantas bolsas plasticas deshechas a la semana? Ingresa la cantidad (números): \n");
 		Bolsas = scan.nextInt();
 		return Bolsas;
 	}
@@ -274,8 +306,9 @@ public int Menu4(int opcion){
 	 **/
 	public float Viaje() {
 		float Viaje;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-				+ "\nQué tan lejos viajas en automóvil o motocicleta cada semana? Ingresa la cantidad en km: \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nQué tan lejos viajas en automóvil o motocicleta cada semana? Ingresa la cantidad en km: \n");
 		Viaje = scan.nextFloat();
 		return Viaje;
 	}
@@ -287,8 +320,9 @@ public int Menu4(int opcion){
 	 **/
 	public int Lavar() {
 		int Lavar;
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-			+ "\nCuantas veces a la semana lavas tu ropa? Ingresa la cantidad (números): \n");
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "\nCuantas veces a la semana lavas tu ropa? Ingresa la cantidad (números): \n");
 		Lavar = scan.nextInt();
 		return Lavar;
 	}
@@ -310,20 +344,22 @@ public int Menu4(int opcion){
 			System.out.println();
 	}
 
-
-/**
-*Bibliografia
-**/
-	public void Bibliografia(){
-		System.out.println("\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-		+ "Banco Mundial. (2018, 20 septiembre). El futuro de la gestión de los desechos sólidos.");
+	/**
+	 * Bibliografia
+	 **/
+	public void Bibliografia() {
+		System.out.println(
+				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
+						+ "Banco Mundial. (2018, 20 septiembre). El futuro de la gestión de los desechos sólidos.");
 		System.out.println("World Bank.");
 		System.out.println("https://www.bancomundial.org/es/news/immersive-story/2018/09/20/what-a-waste-an-update");
 		System.out.println("d-look-into-the-future-of-solid-waste-management");
 		System.out.println("");
-		System.out.println("Laville, S., & Taylor, M. (2017, 30 junio). El mundo compra un millón de botellas de plástico");
+		System.out.println(
+				"Laville, S., & Taylor, M. (2017, 30 junio). El mundo compra un millón de botellas de plástico");
 		System.out.println("por minuto que acaban en vertederos o en el mar. ElDiario.es. ");
-		System.out.println("https://www.eldiario.es/internacional/theguardian/compra-botellas-plastico-mayoria-vertedero");
+		System.out.println(
+				"https://www.eldiario.es/internacional/theguardian/compra-botellas-plastico-mayoria-vertedero");
 		System.out.println("s_1_3309129.html ");
 		System.out.println("");
 		System.out.println("Sevilla, B. (2019). Papel y cartón: consumo mundial 2006-2017 [Conjunto de datos]. ");
@@ -336,7 +372,8 @@ public int Menu4(int opcion){
 		System.out.println("ne-roja.html 	");
 		System.out.println("");
 		System.out.println("González, A. (2019, 26 mayo). Hacia una gestión de la basura más eficiente. elPeriodico. ");
-		System.out.println("https://elperiodico.com.gt/noticias/domingo/2019/05/26/hacia-una-gestion-de-la-basura-mas-");
+		System.out
+				.println("https://elperiodico.com.gt/noticias/domingo/2019/05/26/hacia-una-gestion-de-la-basura-mas-");
 		System.out.println("eficiente/	");
 		System.out.println("");
 		System.out.println("Ministerio de ambiente y recursos naturales. (2016, 22, abril) ");
@@ -345,4 +382,3 @@ public int Menu4(int opcion){
 
 	}
 }
-

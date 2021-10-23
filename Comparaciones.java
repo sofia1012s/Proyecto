@@ -1,5 +1,23 @@
-public class Comparaciones {
 
+/******************************************************************************
+ * Comparaciones.java
+ * 
+ * @author Taewung Heo
+ * @author Héctor de León
+ * @author Jeremy Mejía
+ * @author Sofía Salguero
+ * 
+ * @version 21/10/2021 
+ * Clase de Comparaciones, se encarga de comparar los resultados que brinda la persona 
+ ******************************************************************************/
+
+public class Comparaciones {
+    
+    /** 
+     * @param botellas
+     * @return int
+     * Método que compara la cantidad de botellas que gasta la persona semanalmente
+     */
     public int comparacionBotellas(int botellas) {
         // botellas = cantidad de botellas en una semana
 
@@ -19,6 +37,12 @@ public class Comparaciones {
         return canchasSemana;
     }
 
+    
+    /** 
+     * @param papel
+     * @return int
+     * Método que compara la cantidad de papel que gasta la persona semanalmente
+     */
     public int comparacionPapel(int papel) {
         // papel = cantidad de hojas de papel por semana
 
@@ -36,6 +60,12 @@ public class Comparaciones {
         return tiempo;
     }
 
+    
+    /** 
+     * @param tiempo
+     * @return int
+     * Método que compara la cantidad de agua que gasta la persona semanalmente
+     */
     public int comparacionAgua(int tiempo) {
         // tiempo es la cantidad de minutos que tarda la persona en bañarse
 
@@ -53,6 +83,12 @@ public class Comparaciones {
         return dias;
     }
 
+    
+    /** 
+     * @param bolsas
+     * @return int
+     * Método que compara la cantidad de bolsas que gasta la persona semanalmente
+     */
     public int comparacionBolsas(int bolsas) {
         // bolsas = cantidad de bolsas por semana que desecha la persona
         // Dimensiones bolsa de supermercado:
@@ -70,27 +106,11 @@ public class Comparaciones {
                                                           // semana
         return canchasSemana;
     }
-    /*
-     * public int comparacionCarro() { int km = inorganico.getkm(); // km =
-     * kilometros que viaja la persona en carro por semana
-     * 
-     * // Consumo de un carro promedio: //
-     * https://www.zoilorios.com/noticias/cuantos-litros-de-gasolina-se-gasta-por-
-     * kilometro-recorrido // Cantidad de CO2 que produce un litro de gasolina: //
-     * https://www.elportalinmobiliario.com.mx/articulos/que-contamina-mas-el-diesel
-     * -o-la-gasolina
-     * 
-     * float litros = 0.083f * km; // Cantidad de litros por semana float CO2 =
-     * litros * 2.42f; // Cantidad de kilogramos de CO2 que producen por
-     * 
-     * // Peso promedio de una persona: //
-     * https://www.analesdepediatria.org/es-valoracion-del-peso-talla-e-articulo-
-     * S1695403310002079
-     * 
-     * int personas = (int) (CO2 / 58f); // Peso equivalente al de x personas en Kg
-     * en 1 semana
-     * 
-     * return personas; }
+    
+    /** 
+     * @param frutasVerduras
+     * @return int
+     * Método que compara la cantidad de frutas y verduras que desecha la persona semanalmente
      */
 
     public int comparacionVerduras(int frutasVerduras) {
@@ -104,6 +124,13 @@ public class Comparaciones {
         return gramosAbono;
     }
 
+    
+    /** 
+     * @param pollo
+     * @param edad
+     * @return int
+     * Método que compara la cantidad de pollos que consume la persona semanalmente
+     */
     public int comparacionPollo(int pollo, int edad) {
         // pollo = libras de pollo que consume la persona a la semana
         // peso de un pollo promedio:
@@ -116,6 +143,13 @@ public class Comparaciones {
         return cantidadPollos;
     }
 
+    
+    /** 
+     * @param carne
+     * @param edad
+     * @return int
+     * Método que compara la cantidad de carne que consume la persona semanalmente
+     */
     public int comparacionCarne(int carne, int edad) {
         // carne = libras de carne que consume la persona a la semana
         // peso de una vaca promedio:
@@ -127,6 +161,13 @@ public class Comparaciones {
         return cantidadVacas;
     }
 
+    
+    /** 
+     * @param cerdo
+     * @param edad
+     * @return int
+     * Método que compara la cantidad de cerdos que consume la persona semanalmente
+     */
     public int comparacionCerdo(int cerdo, int edad) {
         // cerdo es la cantidad de libras de cerdo que consume la persona
         // peso promedio de un cerdo:
@@ -138,6 +179,13 @@ public class Comparaciones {
         return cantidadCerdo;
     }
 
+    
+    /** 
+     * @param pescado
+     * @param edad
+     * @return int
+     * Método que compara la cantidad de pescado que consume la persona semanalmente
+     */
     public int comparacionPescado(int pescado, int edad) {
         // pescado es la cantidad de libras de pescado que consume la persona
         // peso promedio de un pescado:
@@ -149,6 +197,29 @@ public class Comparaciones {
         return cantidadPeces;
     }
 
+    
+    /** 
+     * @param aguaP
+     * @param tiempo
+     * @param botellasP
+     * @param botellas
+     * @param papelP
+     * @param papel
+     * @param bolsasP
+     * @param bolsas
+     * @param frutasVerdurasP
+     * @param frutasVerduras
+     * @param polloP
+     * @param pollo
+     * @param carneP
+     * @param carne
+     * @param cerdoP
+     * @param cerdo
+     * @param pescadoP
+     * @param pescado
+     * @return int[]
+     * Método que compara la cantidad de desechos de la persona, con el de una persona promedio
+     */
     public int[] comparacionPersonaP(int aguaP, int tiempo, int botellasP, int botellas, int papelP, int papel,
             int bolsasP, int bolsas, int frutasVerdurasP, int frutasVerduras, int polloP, int pollo, int carneP,
             int carne, int cerdoP, int cerdo, int pescadoP, int pescado) {
