@@ -96,9 +96,9 @@ class Vista {
 		System.out.println(
 				"*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
 						+ "\nBienvenido al programa de concientización sobre el medio ambiente\n"
-						+ "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. De todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n"
-						+ "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, utilizaremos datos que pueda relacionar con su estilo de vida y entender la dimensión del problema.\n"
-						+ "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación de cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
+						+ "El capitalino promedio produce una cantidad de basura de 2 libras por día. Estos desechos se dividen en un 4% de vidrio, 5% de aluminio, 6% de plástico, 11% de papel y cartón y un 68% orgánico. \nDe todos estos desechos el 70% se vuelve inutilizable debido a la humedad que absorben al llegar al basurero. Gonzalez, (2019)\n"
+						+ "\nEl programa busca concientizar al usuario sobre el uso y desecho excesivo de los recursos que consume. Haciéndolo de una forma más amigable, utilizaremos datos que pueda relacionar \ncon su estilo de vida y entender la dimensión del problema. "
+						+ "A continuación, se realizará una serie de preguntas relacionadas con su consumo de recursos. Con sus respuestas, se le dará una aproximación \nde cuánto puede llegar a contaminar en cierta cantidad de tiempo y se dimensionarán con ejemplos de qué tan dañino puede llegar a ser ese consumo para que conozca la magnitud del problema.\n");
 	}
 
 	/**
@@ -111,7 +111,6 @@ class Vista {
 		String[] Recomendaciones = new String[] {
 				"\n-Reduce tus duchas al menor tiempo posible para no gastar el agua.\n",
 				"\n-Cierra el grifo cuando no lo necesites (al cepillarte los dientes, al enjabonarte, al lavar los platos, etc)\n",
-				"\n-Reduce los paseos en automóvil, compartiendo el transporte con alguien más o disminuyendo los viajes inecesarios.\n",
 				"\n-Considera implementar otras fuentes de proteínas a tu alimentación para disminuir los consumos de carnes."
 						+ "\nAquí hay algunos alimentos que podrías incluir en tu dieta: "
 						+ "\nlentejas, tofu, avena, soya, semillas de calabaza o de girasol, habas, garbanzos, pistachos, quinoa, brocoli.\n",
@@ -121,13 +120,13 @@ class Vista {
 						+ "\n3)Añade todos tus desechos orgánicos (cáscaras de huevo, restos de frutas y verduras, restos de café, etc). \nEs importante que no sean desechos procedentes de ningún producto animal."
 						+ "\n4)Cuando el contenedor ya casi se encuentre lleno, cubre los desechos con un poco de tierra y mezcla bien todo con una pala. \nDe esta forma, ya posees tu propio abono casero!"
 						+ "\nEs importante que cada dos semanas, mezcla bien con una pala llevando los restos que están abajo a la superficie y viceversa. Este paso es importante para airear nuestro abono casero.\n",
-				"\n-Cambia tus bombillas por focos ahorrativos o LEDs\n",
+				"\n-Bonus Tip: Cambia tus bombillas por focos ahorrativos o LEDs\n",
 				"\n-Busca centros de reciclaje cerca de tu hogar para depositar todas las botellas y papel que utilizas\n",
-				"\n-Consume productos ecológicos, no solo los puedes encontrar en alimentación, también en limpieza, moda o cosmética.\n",
+				"\n-Bonus Tip: Consume productos ecológicos, no solo los puedes encontrar en alimentación, también en limpieza, moda o cosmética.\n",
 				"\n-Utiliza bolsas reciclables cuando vayas a comprar.\n",
 				"\n-Evita los productos envasados en plástico, utiliza los que están envasados en papel, cartón o vidrio.\n",
-				"\n-Compra productos a granel como legumbres, frutos secos, jabones etc.\n",
-				"\n-Antes de desechar ropa, accesorios, libros, juguetes, aparatos electrónicos en buen estado e incluso recipientes de vidrio, cartón y latas, piensa en cómo darles un nuevo uso. \n" };
+				"\n-Bonus Tip: Compra productos a granel como legumbres, frutos secos, jabones etc.\n",
+				"\n-Bonus Tip: Antes de desechar ropa, accesorios, libros, juguetes, aparatos electrónicos en buen estado e incluso recipientes de vidrio, cartón y latas, piensa en cómo darles un nuevo uso. \n" };
 
 		int rnd1 = new Random().nextInt(Recomendaciones.length);
 		int rnd2 = new Random().nextInt(Recomendaciones.length);
@@ -207,7 +206,7 @@ class Vista {
 		int Carne;
 		System.out.println(
 				"\n*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*\n"
-						+ "\nCuánta carne has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
+						+ "\nCuánta carne de res has consumido esta última semana? Ingresa un aproximado en libras (números): \n");
 		Carne = scan.nextInt();
 		return Carne;
 	}

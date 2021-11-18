@@ -16,8 +16,7 @@ import java.util.*;
 public class Controlador {
 
 	/**
-	 * @param args 
-	 * Método main para ejecutar
+	 * @param args Método main para ejecutar
 	 */
 	public static void main(String[] args) {
 		Vista vis = new Vista();
@@ -47,8 +46,8 @@ public class Controlador {
 				p = false;
 			}
 		} while (!p);
-		vis.Division(40);
-		while (opcion != 6) {
+		vis.Division(1);
+		while (opcion != 4) {
 			// if para eliminar opciones que ya se usaron
 			if (Organico == 0 && Inorganico == 0) {
 
@@ -65,7 +64,7 @@ public class Controlador {
 						}
 						p = true;
 					} catch (InputMismatchException ex) {
-						vis.Division(40);
+						vis.Division(1);
 						System.out.println("\nPor favor, ingrsar un numero\n");
 						p = false;
 					}
@@ -75,7 +74,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setFV(vis.FV());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -89,7 +88,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setPollo(vis.Pollo());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -103,7 +102,21 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
+							org.setCarne(vis.Carne());
+							p = true;
+						} catch (InputMismatchException ex) {
+							System.out.println("\nPor favor, ingrese un numero.\n");
+							p = false;
+						} catch (Exception e) {
+							System.out.println("\nHubo un error, por favor intente de nuevo.\n");
+							p = false;
+						}
+					} while (!p);
+					do {
+						try {
+							vis = new Vista();
+							vis.Division(1);
 							org.setCerdo(vis.Cerdo());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -117,9 +130,9 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setPescado(vis.Pescado());
-							vis.Division(40);
+							vis.Division(1);
 							p = true;
 						} catch (InputMismatchException ex) {
 							System.out.println("\nPor favor, ingrese un numero. \n");
@@ -134,7 +147,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setBotellas(vis.Botellas());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -148,7 +161,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setPapel(vis.Papel());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -162,7 +175,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setTiempo(vis.Tiempo());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -176,9 +189,9 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setBolsas(vis.Bolsas());
-							vis.Division(40);
+							vis.Division(1);
 							p = true;
 						} catch (InputMismatchException ex) {
 							System.out.println("\nPor favor, ingrese un numero. \n");
@@ -194,7 +207,7 @@ public class Controlador {
 					break;
 
 				case 4:
-					opcion = 6;
+					opcion = 4;
 
 				}
 
@@ -212,7 +225,7 @@ public class Controlador {
 						}
 						p = true;
 					} catch (InputMismatchException ex) {
-						vis.Division(40);
+						vis.Division(1);
 						System.out.println("\nPor favor, ingrsar un numero\n");
 						p = false;
 					}
@@ -222,7 +235,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setBotellas(vis.Botellas());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -236,7 +249,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setPapel(vis.Papel());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -250,7 +263,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setTiempo(vis.Tiempo());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -264,9 +277,9 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							ing.setBolsas(vis.Bolsas());
-							vis.Division(40);
+							vis.Division(1);
 							p = true;
 						} catch (InputMismatchException ex) {
 							System.out.println("\nPor favor, ingrese un numero. \n");
@@ -281,7 +294,7 @@ public class Controlador {
 					vis.Bibliografia();
 					break;
 				case 3:
-					opcion = 6;
+					opcion = 4;
 				}
 
 			}
@@ -298,7 +311,7 @@ public class Controlador {
 						}
 						p = true;
 					} catch (InputMismatchException ex) {
-						vis.Division(40);
+						vis.Division(1);
 						System.out.println("\nPor favor, ingrsar un numero\n");
 						p = false;
 					}
@@ -308,7 +321,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setFV(vis.FV());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -322,7 +335,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setPollo(vis.Pollo());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -336,7 +349,7 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setCerdo(vis.Cerdo());
 							p = true;
 						} catch (InputMismatchException ex) {
@@ -350,9 +363,9 @@ public class Controlador {
 					do {
 						try {
 							vis = new Vista();
-							vis.Division(40);
+							vis.Division(1);
 							org.setPescado(vis.Pescado());
-							vis.Division(40);
+							vis.Division(1);
 							p = true;
 						} catch (InputMismatchException ex) {
 							System.out.println("\nPor favor, ingrese un numero. \n");
@@ -368,7 +381,7 @@ public class Controlador {
 					vis.Bibliografia();
 					break;
 				case 3:
-					opcion = 6;
+					opcion = 4;
 				}
 
 			}
@@ -381,7 +394,7 @@ public class Controlador {
 						opcion = vis.Menu4(opcion);
 						p = true;
 					} catch (InputMismatchException ex) {
-						vis.Division(40);
+						vis.Division(1);
 						System.out.println("\nPor favor, ingrsar un numero\n");
 						p = false;
 					}
@@ -394,20 +407,34 @@ public class Controlador {
 							com.comparacionPapel(ing.getPapel());
 							com.comparacionAgua(ing.getTiempo());
 							com.comparacionBolsas(ing.getBolsas());
-							vis.Division(40);
-							System.out.println("\nResultados: \n");
+							vis.Division(1);
+							vis.Print("\n*****Resultados Inorganicos****");
 							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de botellas por semana, se llenarian: ",
+									"\n-Si toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de botellas por semana, se llenarian: ",
 									com.comparacionBotellas(ing.getBotellas()), " canchas de futbol cada semana.");
-							vis.Resultados("\nCon la cantidad de hojas que gasta por semana, se tardaría: ",
+							vis.Resultados("\n-Con la cantidad de hojas que gasta por semana, se tardaría: ",
 									com.comparacionPapel(ing.getPapel()),
 									" semanas en imprimir el libro Quijote de la Mancha");
-							vis.Resultados("\nEl tiempo que tardas bañandote podria llenar una piscina en: ",
+							vis.Resultados("\n-El tiempo que tardas bañandote podria llenar una piscina en: ",
 									com.comparacionAgua(ing.getTiempo()), " dias.");
 							vis.Resultados(
-									"\nSi toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de bolsas por semana, se llenarian: ",
+									"\n-Si toda la poblacion de Guatemala (16,600,000) gastara la misma cantidad de bolsas por semana, se llenarian: ",
 									com.comparacionBolsas(ing.getBolsas()), " canchas de baloncesto cada semana.");
+							vis.Print("\n\n****Resultados Inorganicos:****");
+							vis.Resultados("\n-Con la cantidad de frutas y verduras que desechas, podrías producir ",
+									com.comparacionVerduras(org.getFrutasVerduras()),
+									" gramos de abono en una semana. ");
+							vis.Resultados("\n-En toda tu vida has consumido un aproximado de ",
+									com.comparacionPollo(org.getPollo(), per.getEdad()), " pollos. ");
+							vis.Resultados("\n-En toda tu vida has consumido un aproximado de ",
+									com.comparacionCarne(org.getCarne(), per.getEdad()), " vacas. ");
+							vis.Resultados("\n-En toda tu vida has consumido un aproximado de ",
+									com.comparacionCerdo(org.getCerdo(), per.getEdad()), " cerdos. ");
+							vis.Resultados("\n-En toda tu vida has consumido un aproximado de ",
+									com.comparacionPescado(org.getPescado(), per.getEdad()), " pescados. ");
 							vis.Division(2);
+
+							vis.Print("\n****Comparaciones con una persona promedio****\n");
 							int[] A;
 							String[] B = { "agua", "botellas", "papel", "bolsas", "frutas y verduras", "pollo", "carne",
 									"cerdo", "pescado" };
@@ -423,15 +450,15 @@ public class Controlador {
 							for (int i = 0; i < A.length; i++) {
 								if (A[i] == 1) {
 									System.out.println(
-											"Su consumo de " + B[i] + " es mayor que el de la persona promedio.\n");
+											"-Su consumo de " + B[i] + " es mayor que el de la persona promedio.\n");
 								} else {
 									System.out.println(
-											"Su consumo de " + B[i] + " esta por debajo del de la persona promedio.\n");
+											"-Su consumo de " + B[i] + " esta por debajo del de la persona promedio.\n");
 								}
 							}
 							p = true;
 						} catch (ArithmeticException ex) {
-							vis.Division(40);
+							vis.Division(1);
 							System.out.println(
 									"\nRecordatorio: \n \nSi desea obtener los resultados por favor, ingrese los consumos organicos e inorganicos.\n");
 							break;
@@ -442,7 +469,7 @@ public class Controlador {
 					} while (!p);
 					break;
 				case 2:
-					vis.Division(40);
+					vis.Division(1);
 					System.out.println("\nRecomendaciones: \n");
 					vis.Recomendaciones();
 					break;
@@ -451,7 +478,7 @@ public class Controlador {
 					vis.Bibliografia();
 					break;
 				case 4:
-					opcion = 6;
+					opcion = 4;
 				}
 
 			}
