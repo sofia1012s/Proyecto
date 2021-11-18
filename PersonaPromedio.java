@@ -6,7 +6,7 @@
  * @author Jeremy Mejía
  * @author Sofía Salguero
  * 
- * @version 21/10/2021 
+ * @version 18/11/2021 
  * 
  * Clase de persona promedio, se encarga de brindar los métodos necesarios
  * para comparar los desechos del usuario con la de una persona promedio

@@ -7,7 +7,7 @@
  * @author Jeremy Mejía
  * @author Sofía Salguero
  * 
- * @version 21/10/2021 
+ * @version 18/11/2021 
  * 
  * Clase Vista, tiene los métodos necesarios para brindarle una interfaz al 
  * usuario

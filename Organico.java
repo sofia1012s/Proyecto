@@ -6,7 +6,7 @@
  * @author Jeremy Mejía
  * @author Sofía Salguero
  * 
- * @version 21/10/2021 
+ * @version 18/11/2021 
  * 
  * Clase de basura orgánica, se encarga de tener getters y setters para los
  * datos de los desechos orgánicos

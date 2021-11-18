@@ -7,7 +7,7 @@
  * @author Jeremy Mejía
  * @author Sofía Salguero
  * 
- * @version 21/10/2021 
+ * @version 18/11/2021 
  * Clase de Comparaciones, se encarga de comparar los resultados que brinda la persona 
  ******************************************************************************/
 

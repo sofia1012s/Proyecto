@@ -6,7 +6,7 @@
  * @author Héctor de León
  * @author Jeremy Mejía
  * @author Sofía Salguero
- * @version 21/10/2021 
+ * @version 18/11/2021 
  * 
  * Clase Controlador, se encarga de unir las distintas clases para tener 
  * el código completo funcional
